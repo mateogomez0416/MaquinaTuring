@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <link crossorigin="anonymous" media="all" integrity="sha512-FG+rXqMOivrAjdEQE7tO4BwM1poGmg70hJFTlNSxjX87grtrZ6UnPR8NkzwUHlQEGviu9XuRYeO8zH9YwvZhdg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-146fab5ea30e8afac08dd11013bb4ee0.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-iXrV/b4ypc1nr10b3Giikqff+qAx5osQ0yJRxHRDd8mKFefdMtEZ0Sxs1QysJxuJBayOKThjsuMjynwBJQq0aw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-897ad5fdbe32a5cd67af5d1bdc68a292.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-bdcUCE1osw1cEGLs662y4ulJx7ISeuLws/QBd3xlTAAQfjeO8A7quUiUAk0DWu9oVNW+g3GQ0dL+iAtAOaIntQ==" rel="stylesheet" href="https://github.githubassets.com/assets/github-6dd714084d68b30d5c1062ecebadb2e2.css" />
+  
+  <style>
+    ol {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111111;
+    }
+    canvas {
+    
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+        
+}
+
+    </style>
+
+
+</head>
+
+  <body class="logged-out env-production page-responsive session-authentication">
+    
+    
+    <div class="row" >    
+    
+      <div class="auth-form-header p-0">
+        <h1>Maquina de turing Html y js</h1>
+      </div>
+
+      <div class="auth-form-body mt-3">
+
+        <div class="auth-form-header p-0">
+            <div class="auth-form-header p-0">
+
+                <h2> Criterios de la cadena </h2>
+                <p>Basado en el ejemplo de la diapositiva de la pagina 134 solo seran admitidos las letras a y b en la cadena binaria. </p>            </div>
+           
+            
+                <ol >
+                    <li><a >Acepta la letra a minuscula</a></li>
+                    <li><a >Acepta la letra b minuscula</a></li>
+                    <li><a >No se aceptan caracteres especiales</a></li>
+                
+                </ol>
+
+                <label for="login_field">
+                    Ingrese una cadena binaria   
+                </label>
+
+                <div >
+                    <label for="login_field"> Ingrese una cadena binaria  y presione OK </label>
+                    <input type="text" id="id1"  required class="form-control input-block"  />
+                    
+                    <div id="demo"  role="alert"> </div>
+        
+                    <button class="btn btn-primary" onclick="myFunction()"    >OK</button>
+                    <button class="btn btn-success" onclick="reanudar()">Play</button>
+                    <button class="btn btn-primary " onclick="aumentarvelocidad()">+</button>
+                    <button class="btn btn-primary" onclick="bajarvelocidad()">-</button>
+                    <button class="btn btn-danger" onclick="pause()">pausa</button><br><br>
+                </div>
+
+                <canvas  id="canvas" width="600" height="300" ></canvas>
+            </div>  
+
+        </div>
+
+        
+       
+       
+        </div>
+
+    </div>
+     
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script type="text/javascript" src="maquina.js"></script>
+
+  </body>
+</html>
